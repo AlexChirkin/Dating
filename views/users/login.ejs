@@ -1,0 +1,28 @@
+<% layout('/shared/login_page.ejs') -%>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="wrap">
+                <p class="form-title">
+                    Sign In</p>
+                <form class="login" action="/login" method="post">
+                    <input type="hidden" name="postAuthDestination" value="<%=postAuthDestination%>">
+                    <input type="text" name="username" placeholder="Username" />
+                    <input type="password"  name="password" placeholder="Password" />
+                    <input type="submit" value="Sign In" class="btn btn-success btn-sm" />
+                    <div class="remember-forgot">
+                        <div class="row">
+                            <<div class="col-md-12 forgot-pass-content">
+                                <div style="text-align: center;">  <a href="/reset_password" class="forgot-pass">Forgot Password</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

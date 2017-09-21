@@ -1,0 +1,12 @@
+<% layout('/shared/user_profile.ejs') -%>
+<!doctype html>
+<ul id="messages">
+  <% for(var i=0; i<conversation.length; i++) {%>
+     <li><a href="#"><%= conversation[i].author.firstName %></a>: <%= conversation[i].body %></li>
+  <% } %>
+</ul>
+<form id="sendmsg" class="profile" action="" method="post">
+
+  <input id="u" type="hidden" name = "username" value="<%= user.firstName %>">
+  <input id="m" name="composedMessage" autocomplete="off" /><input type="submit" value="Send" class="btn btn-info" />
+</form>

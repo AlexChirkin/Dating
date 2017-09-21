@@ -1,0 +1,15 @@
+<div class="navbar navbar-static-top">
+  <div class="navbar-inner">
+    <a class="brand" href="/">My profile</a>
+    <ul class="nav">
+      <% if(userIsAuthenticated){ %>
+        <li><a href="/chat">Converstations</a></li>
+        <li><a href="/users">Search Users</a></li>
+        <li><a href="/account">Edit profile</a></li>
+        <li class="right"><a href="/logout">Logout</a></li>
+      <% } else { %>
+        <li><a href="/register">Register</a></li>
+      <% } %>
+    </ul>
+  </div>
+</div>

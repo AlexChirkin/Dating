@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Сайт знакомств</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel='stylesheet' href='/css/bootstrap.min.css' />
+      <link rel='stylesheet' href='/css/bootstrap-responsive.min.css' />
+      <link rel='stylesheet' href='/css/user_profile.css' />
+
+      <script src="/js/jquery-1.9.1.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/user_profile.js"></script>
+      <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+      <script src="/js/converstation.js"></script>
+
+    </head>
+    <body>
+    <% include navigation.ejs %>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+            <% include alert_messages.ejs %>
+            <%- body -%>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

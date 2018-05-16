@@ -1,4 +1,4 @@
-Application with:
+Application with:<br>
 -Registration&Authentication
 -IM chat (Socket)
 
